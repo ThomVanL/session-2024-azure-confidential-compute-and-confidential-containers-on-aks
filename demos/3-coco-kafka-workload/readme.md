@@ -1,0 +1,5 @@
+# Running a Kafka Workload with CoCo on Azure Kubernetes Service
+
+his demo might be a bit more complex, but it really shows off what CoCo can do. We’re demonstrating how to secure your Kafka workload on AKS using Confidential Containers (CoCo). It was built on a demo by some awesome Microsoft engineers, and showcases end-to-end encryption for Kafka messages, with keys managed by Azure Key Vault (AKV) or mHSM. The cool part is that the private key is only released when the Kafka consumer runs inside a confidential container environment, this is done using a Secure Key Release (SKR) container which runs in the pod.
+
+You can check out the full demo [here](https://github.com/microsoft/confidential-container-demos/tree/3f36a6f069620e51aa7a6fefb4ea4b81450b19cb/kafka) for all the steps to test a workload within the Confidential Container project.
